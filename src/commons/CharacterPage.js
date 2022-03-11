@@ -5,6 +5,7 @@ class Character {
         this.level = 1
         this.race = ""
         this.background = ""
+        this.alignment = ""
         
         this.str = 10
         this.dex = 10
@@ -14,22 +15,23 @@ class Character {
         this.cha = 10
         
         this.inspiration = false
+        this.proficiency = 0
 
         this.acrobacias = false
         this.arcano = false
         this.atletismo = false
         this.engaño = false
         this.historia = false
-        this.interpretación = false
-        this.intimidación = false
-        this.investigación = false
+        this.interpretacion = false
+        this.intimidacion = false
+        this.investigacion = false
         this.juegoDeManos = false
         this.medicina = false
         this.naturaleza = false
-        this.percepción = false
+        this.percepcion = false
         this.perspicacia = false
-        this.persuación = false
-        this.religión = false
+        this.persuacion = false
+        this.religion = false
         this.sigilo = false
         this.supervivencia = false
         this.tratoConAnimales = false
