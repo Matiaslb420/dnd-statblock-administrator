@@ -5,7 +5,6 @@ import axios from "axios";
 
 const Navbar = () => {
   const userContext = useContext(AuthContext);
-  console.log(userContext.isAuthenticated);
   return (
     <nav>
       {userContext.isAuthenticated ? (
@@ -26,7 +25,7 @@ const Navbar = () => {
       ) : (
         <>
           <Link to="/login">
-            <button>login</button>
+            <button className="button is-primary">login</button>
           </Link>
           <Link to="/register">
             <button>register</button>

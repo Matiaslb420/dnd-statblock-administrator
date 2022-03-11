@@ -1,5 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+
 
 const useInput = (initialState) => {
     const [value, setValue] = useState(initialState);

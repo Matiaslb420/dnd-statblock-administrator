@@ -68,5 +68,5 @@ app.use((err, req, res, next) => {
   res.status(500).send(err.message);
 });
 
-db.sync({force:true})
+db.sync({force:false})
 .then(()=> app.listen(8000, ()=> console.log('Servidor iniciado en el puerto 8000.')))
