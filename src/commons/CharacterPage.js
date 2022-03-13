@@ -1,11 +1,10 @@
 class Character {
     constructor(){
         this.name = ""
-        this.class = ""
+        this.className = ""
         this.level = 1
         this.race = ""
         this.background = ""
-        this.alignment = ""
         
         this.str = 10
         this.dex = 10
@@ -50,15 +49,21 @@ class Character {
         this.hpTemp = 0
         this.hpDice = ""
 
-        this.whoAmI = ""
 
         this.proficiencys = ""
         this.languages =""
 
-        this.money = [0,0,0,0]
+        
+
+        this.pc = 0
+        this.pp = 0
+        this.po = 0
+        this.ppl = 0
         this.equipment = ""
 
+
         this.characteristics = ""
+        this.appareance = ""
         this.backstory = ""
 
     }
