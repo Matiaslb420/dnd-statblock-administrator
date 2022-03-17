@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/" element={<h1>sexy goblin?</h1>} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/char_create" element={<CharacterPage />} />
+          <Route path="/charPage" element={<CharacterPage />} />
         </Routes>
       </CharContextProvider>
     </AuthContextProvider>

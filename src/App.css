@@ -1,10 +1,10 @@
 * {
     color: antiquewhite;
+    box-sizing: border-box;
 }
 
 #fullBody{
-    width: 400px;
-    height: 600px;
+    max-width: 100%;
 }
 
 input::-webkit-outer-spin-button,
@@ -13,12 +13,74 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
+/* Firefo. */
 input[type=number] {
   -moz-appearance: textfield;
 }
 
-#input-lenguajes {
-    height: 70%;
-    
+#form-character {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 500px);
+  grid-template-areas: 
+    "i i i r r p"
+    "i i i r r p"
+    "s s n a a e"
+    "s s n a a e"
+    "h h t a a e"
+    "h h t a a e";
+}
+
+#inputs-identity {
+  grid-area: i;
+  background-color: red;
+}
+
+#inputs-handyInfoRp {
+  grid-area: r;
+  background-color: yellow;
+}
+
+#inputs-fullBody {
+  grid-area: p;
+  background-color: aqua;
+}
+
+#inputs-stats {
+  background-color: green;
+  grid-area: s;
+}
+
+#inputs-neatThings{
+  background-color: blueviolet;
+  grid-area: n;
+}
+
+#inputs-savingThrows {
+  background-color: coral;
+  grid-area: t;
+}
+
+#inputs-skills{
+  background-color: darkred;
+  grid-area: a;
+}
+
+#inputs-combatStats{
+  background-color: indigo;
+  grid-area: c;
+}
+
+#inputs-equimpent{
+  background-color: black;
+  grid-area: e;
+}
+
+#inputs-characteristics{
+  background-color: indianred;
+  grid-area: h;
 }
